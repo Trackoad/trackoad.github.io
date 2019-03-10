@@ -1,8 +1,45 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Trackoad website</title>
+    <!-- Compiled and minified CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css'>
+
+    <!-- Compiled and minified JavaScript -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   </head>
+
   <body>
-    <p>Hello World</p>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/img_back_1.jpg" width="2"></div>
+      </div>
+      <div class="section white">
+        <div class="row container">
+          <h2 class="header">Trackoad</h2>
+          <p class="grey-text text-darken-3 lighten-3">The famous genious.</p>
+          <ul class="collection with-header" id="listClientSrc">
+            <li class="collection-item"><h5>Click here to download client files</h5></li>
+          </ul>
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/img_back_2.jpg" width="2"></div>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js'></script>
+      <script src="js/client.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('.parallax').parallax();
+      });
+        ClientManager.init(document.getElementById("listClientSrc"));
+      </script>
+
+
+
+    <!--Import jQuery before materialize.js-->
+
   </body>
 </html>
