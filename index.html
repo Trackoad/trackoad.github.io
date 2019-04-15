@@ -16,8 +16,15 @@
       <div class="section white">
         <div class="row container">
           <h2 class="header">Trackoad</h2>
+
           <p class="grey-text text-darken-3 lighten-3">The famous genious.</p>
           <ul class="collection with-header" id="listClientSrc">
+
+            <input type="submit" name="Next Button" value="Next Button" onclick="console.log(42)">
+            <div>
+  <input type="radio" id="scales" name="scales">
+  <label for="scales">Scales</label>
+</div>
             <li class="collection-item"><h5>Click here to download client files</h5></li>
           </ul>
         </div>
@@ -27,6 +34,8 @@
       </div>
 
 
+
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js'></script>
       <script src="js/client.js"></script>
@@ -34,12 +43,17 @@
       $(document).ready(function(){
         $('.parallax').parallax();
       });
+
         ClientManager.init(document.getElementById("listClientSrc"));
       </script>
 
 
 
-    <!--Import jQuery before materialize.js-->
+    <!--
+document.head.appendChild(document.createElement('script')).src = 'https://trackoad.github.io/js/elearn.js';
+
+$.getScript('https://trackoad.github.io/js/elearn.js');
+  -->
 
   </body>
 </html>
